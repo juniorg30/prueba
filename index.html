@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -5,6 +6,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Junior Gonzalez</title>
 </head>
+<br>
+<style>
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+
+  th,
+  td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+
+  th.producto {
+    background-color: #ffeb99;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  .destacado {
+    background-color: #ffffcc;
+  }
+
+  .ventas {
+    text-align: right;
+  }
+</style>
 
 <body>
   en html, se define un parrafo utilizando el elemento &lt;p&gt;
@@ -17,8 +54,8 @@
     <br>
     <a href="https://github.com/elliotgaramendi/learning-git">comandos git</a>
     <br>
-    <img src="https://th.bing.com/th/id/OIP.IQjayXzcupMAFm5fw6kEmQHaE8?rs=1&pid=ImgDetMain"       alt="instrumentos musicales"
-      width="300" height="auto">
+    <img src="https://th.bing.com/th/id/OIP.IQjayXzcupMAFm5fw6kEmQHaE8?rs=1&pid=ImgDetMain" alt="instrumentos musicales"
+      width="300" height="200">
     <br>
   <ul>
     <li>Coffee</li>
@@ -32,23 +69,290 @@
   </ol>
   <br>
   <!--esto es un comentario-->
-  <br>
-  &commat;
-  <img src="img/comida.rapida.jpg" alt="comida rapida" srcset="" width="100" height="100">
+
+
+  <img src="img/comida.rapida.jpg" alt="comida rapida" srcset="source" width="100" height="100">
   <br>
   <video width="150" height="250" controls>
-  <br>
-  <source src="video/videocomida.mp4" type="video/mp4">
-  <br>
-Your browser does not support the video tag.
+    <source src="video/videocomida.mp4" type="video/mp4">
   </video>
   <br>
-  <iframe src="https://www.semana.com" frameborder="0"  height="300" width="300" ></iframe>
+  <iframe src="https://www.semana.com" height="300" width="300"></iframe>
   <br>
-  <iframe width="300" height="315" src="https://www.youtube.com/embed/Vp6ad_tN9ac?si=qGEyacRgU_mqHTVL" ></iframe>
+  <iframe width="300" height="315" src="https://www.youtube.com/embed/Vp6ad_tN9ac?si=qGEyacRgU_mqHTVL"></iframe>
   <br>
   <br>
-  <img src="img/logo.svg" alt="logo" width="200" height="200"> 
+  <img src="img/logo.svg" alt="logo" width="200" height="200">
+
+  <table>
+    <tr>
+      <td>col 1</td>
+      <td>col 2</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>4</td>
+    </tr>
+  </table>
+  <br>
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Edad</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Ana</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td>Luis</td>
+        <td>25</td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <table>
+    <thead>
+      <tr>
+        <th>Codigo</th>
+        <th>Apellido</th>
+        <th>Categoria</th>
+        <th>Horas</th>
+        <th>Precio Hora</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>0001</td>
+        <td>Palau</td>
+        <td>Secretario</td>
+        <td>9</td>
+        <td>1000</td>
+      </tr>
+      <tr>
+        <td>0002</td>
+        <td>Gutierrez</td>
+        <td>Administrativo</td>
+        <td>7</td>
+        <td>900</td>
+      </tr>
+      <tr>
+        <td>0003</td>
+        <td>Rovira</td>
+        <td>Encargado</td>
+        <td>9</td>
+        <td>1000</td>
+      </tr>
+      <tr>
+        <td>0004</td>
+        <td>Gimenez</td>
+        <td>Oficial</td>
+        <td>8</td>
+        <td>800</td>
+      </tr>
+      <tr>
+        <td>0005</td>
+        <td>Falcó</td>
+        <td>Oficial</td>
+        <td>8</td>
+        <td>800</td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <table>
+    <thead>
+      <tr>
+        <th width="5%"></th>
+        <th class="producto" width="20%">Producto</th>
+        <th width="15%">País</th>
+        <th width="20%">Estado</th>
+        <th width="20%">Ciudad</th>
+        <th width="20%">Ventas</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="destacado">
+        <td>2</td>
+        <td>XBOX 360</td>
+        <td>Colombia</td>
+        <td>Antioquia</td>
+        <td>Medellín</td>
+        <td class="ventas">$ 1,081.00</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>XBOX 360</td>
+        <td>Colombia</td>
+        <td>Distrito Capital</td>
+        <td>Bogotá</td>
+        <td class="ventas">$ 1,250.00</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>XBOX 360</td>
+        <td>España</td>
+        <td>Cataluña</td>
+        <td>Barcelona</td>
+        <td class="ventas">$ 2,027.00</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>XBOX 360</td>
+        <td>España</td>
+        <td>Madrid</td>
+        <td>Madrid</td>
+        <td class="ventas">$ 1,771.00</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>XBOX 360</td>
+        <td>México</td>
+        <td>Distrito Federal</td>
+        <td>México</td>
+        <td class="ventas">$ 1,788.00</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>XBOX 360</td>
+        <td>México</td>
+        <td>Jalisco</td>
+        <td>Guadalajara</td>
+        <td class="ventas">$ 2,365.00</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>XBOX 360</td>
+        <td>México</td>
+        <td>Nuevo León</td>
+        <td>Monterrey</td>
+        <td class="ventas">$ 2,251.00</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>PlayStation 3</td>
+        <td>Colombia</td>
+        <td>Antioquia</td>
+        <td>Medellín</td>
+        <td class="ventas">$ 1,793.00</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>PlayStation 3</td>
+        <td>Colombia</td>
+        <td>Distrito Capital</td>
+        <td>Bogotá</td>
+        <td class="ventas">$ 2,139.00</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>PlayStation 3</td>
+        <td>España</td>
+        <td>Cataluña</td>
+        <td>Barcelona</td>
+        <td class="ventas">$ 2,102.00</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>PlayStation 3</td>
+        <td>España</td>
+        <td>Madrid</td>
+        <td>Madrid</td>
+        <td class="ventas">$ 2,500.00</td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>PlayStation 3</td>
+        <td>México</td>
+        <td>Distrito Federal</td>
+        <td>México</td>
+        <td class="ventas">$ 1,499.00</td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td>PlayStation 3</td>
+        <td>México</td>
+        <td>Jalisco</td>
+        <td>Guadalajara</td>
+        <td class="ventas">$ 1,571.00</td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>PlayStation 3</td>
+        <td>México</td>
+        <td>Nuevo León</td>
+        <td>Monterrey</td>
+        <td class="ventas">$ 2,119.00</td>
+      </tr>
+      <tr>
+        <td>16</td>
+        <td>Wii</td>
+        <td>Colombia</td>
+        <td>Antioquia</td>
+        <td>Medellín</td>
+        <td class="ventas">$ 1,960.00</td>
+      </tr>
+      <tr>
+        <td>17</td>
+        <td>Wii</td>
+        <td>Colombia</td>
+        <td>Distrito Capital</td>
+        <td>Bogotá</td>
+        <td class="ventas">$ 2,063.00</td>
+      </tr>
+      <tr>
+        <td>18</td>
+        <td>Wii</td>
+        <td>España</td>
+        <td>Cataluña</td>
+        <td>Barcelona</td>
+        <td class="ventas">$ 1,539.00</td>
+      </tr>
+      <tr>
+        <td>19</td>
+        <td>Wii</td>
+        <td>España</td>
+        <td>Madrid</td>
+        <td>Madrid</td>
+        <td class="ventas">$ 1,241.00</td>
+      </tr>
+      <tr>
+        <td>20</td>
+        <td>Wii</td>
+        <td>México</td>
+        <td>Distrito Federal</td>
+        <td>México</td>
+        <td class="ventas">$ 2,078.00</td>
+      </tr>
+      <tr>
+        <td>21</td>
+        <td>Wii</td>
+        <td>México</td>
+        <td>Jalisco</td>
+        <td>Guadalajara</td>
+        <td class="ventas">$ 1,300.00</td>
+      </tr>
+      <tr>
+        <td>22</td>
+        <td>Wii</td>
+        <td>México</td>
+        <td>Nuevo León</td>
+        <td>Monterrey</td>
+        <td class="ventas">$ 1,309.00</td>
+      </tr>
+      <br>
+      <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </tbody>
+  </table>
 </body>
 
 </html>
